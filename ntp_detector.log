@@ -1,0 +1,477 @@
+2025-11-23 01:58:35,156 - INFO - Starting NTPDetector
+2025-11-23 01:58:35,156 - INFO - Listening on interface: Npcap Loopback Adapter
+2025-11-23 01:58:35,157 - INFO - Stats worker started
+2025-11-23 01:58:35,158 - INFO - [2025-11-22T18:58:35.158544Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 01:58:35,185 - ERROR - Sniffer exception
+Traceback (most recent call last):
+  File "D:\Project NTP-Monlist-Amplification-Attack\detector.py", line 355, in _sniff
+    sniff(
+    ~~~~~^
+        iface=self.iface,
+        ^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        stop_filter=lambda x: not self.running.is_set(),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\MANH HUNG\AppData\Local\Programs\Python\Python313\Lib\site-packages\scapy\sendrecv.py", line 1424, in sniff
+    sniffer._run(*args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\MANH HUNG\AppData\Local\Programs\Python\Python313\Lib\site-packages\scapy\sendrecv.py", line 1273, in _run
+    sniff_sockets[_RL2(iface)(type=ETH_P_ALL, iface=iface,
+                  ~~~~^^^^^^^
+  File "C:\Users\MANH HUNG\AppData\Local\Programs\Python\Python313\Lib\site-packages\scapy\sendrecv.py", line 1258, in <lambda>
+    _RL2 = lambda i: L2socket or resolve_iface(i).l2listen()  # type: Callable[[_GlobInterfaceType], Callable[..., SuperSocket]]  # noqa: E501
+                                 ~~~~~~~~~~~~~^^^
+  File "C:\Users\MANH HUNG\AppData\Local\Programs\Python\Python313\Lib\site-packages\scapy\interfaces.py", line 434, in resolve_iface
+    return resolve_iface(dev, retry=False)
+  File "C:\Users\MANH HUNG\AppData\Local\Programs\Python\Python313\Lib\site-packages\scapy\interfaces.py", line 431, in resolve_iface
+    raise ValueError("Interface '%s' not found !" % dev)
+ValueError: Interface 'Npcap Loopback Adapter' not found !
+2025-11-23 01:58:36,158 - INFO - Stats worker exiting
+2025-11-23 01:58:36,159 - INFO - Full JSON history written to ntp_stats.ndjson.full.json
+2025-11-23 01:58:36,160 - INFO - Full CSV history written to ntp_stats.csv.full.csv
+2025-11-23 02:06:23,640 - INFO - Starting NTPDetector
+2025-11-23 02:06:23,641 - INFO - Listening on interface: \Device\NPF_Loopback
+2025-11-23 02:06:23,641 - INFO - Stats worker started
+2025-11-23 02:06:23,642 - INFO - [2025-11-22T19:06:23.642505Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:06:24,642 - INFO - [2025-11-22T19:06:24.642053Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:06:25,643 - INFO - [2025-11-22T19:06:25.643400Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:06:26,644 - INFO - [2025-11-22T19:06:26.644070Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:06:27,645 - INFO - [2025-11-22T19:06:27.645160Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:06:28,646 - INFO - [2025-11-22T19:06:28.646128Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:06:29,646 - INFO - [2025-11-22T19:06:29.646341Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:06:30,646 - INFO - [2025-11-22T19:06:30.646676Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:06:31,646 - INFO - [2025-11-22T19:06:31.646851Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:06:32,647 - INFO - [2025-11-22T19:06:32.647916Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:06:33,648 - INFO - [2025-11-22T19:06:33.648317Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:06:34,648 - INFO - [2025-11-22T19:06:34.648649Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:06:35,649 - INFO - [2025-11-22T19:06:35.649264Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:06:36,650 - INFO - [2025-11-22T19:06:36.650137Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:06:37,650 - INFO - [2025-11-22T19:06:37.650427Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:06:38,650 - INFO - [2025-11-22T19:06:38.650587Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:06:39,651 - INFO - [2025-11-22T19:06:39.651456Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:06:40,653 - INFO - [2025-11-22T19:06:40.653774Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:06:41,654 - INFO - [2025-11-22T19:06:41.654067Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:06:42,654 - INFO - [2025-11-22T19:06:42.654684Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:06:43,655 - INFO - [2025-11-22T19:06:43.655019Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:06:44,655 - INFO - [2025-11-22T19:06:44.655362Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:06:45,656 - INFO - [2025-11-22T19:06:45.656541Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:06:46,657 - INFO - [2025-11-22T19:06:46.657715Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:06:47,658 - INFO - [2025-11-22T19:06:47.657954Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:06:48,658 - INFO - [2025-11-22T19:06:48.658566Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:06:49,658 - INFO - [2025-11-22T19:06:49.658798Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:06:50,659 - INFO - [2025-11-22T19:06:50.659845Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:06:51,660 - INFO - [2025-11-22T19:06:51.660676Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:06:52,661 - INFO - [2025-11-22T19:06:52.661198Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:06:53,662 - INFO - [2025-11-22T19:06:53.662012Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:06:54,662 - INFO - [2025-11-22T19:06:54.662137Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:06:55,662 - INFO - [2025-11-22T19:06:55.662824Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:06:56,663 - INFO - [2025-11-22T19:06:56.663216Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:06:57,663 - INFO - [2025-11-22T19:06:57.663491Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:06:58,663 - INFO - [2025-11-22T19:06:58.663600Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:06:59,663 - INFO - [2025-11-22T19:06:59.663884Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:00,664 - INFO - [2025-11-22T19:07:00.664792Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:01,665 - INFO - [2025-11-22T19:07:01.665305Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:02,666 - INFO - [2025-11-22T19:07:02.665896Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:03,666 - INFO - [2025-11-22T19:07:03.666418Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:04,667 - INFO - [2025-11-22T19:07:04.667415Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:05,667 - INFO - [2025-11-22T19:07:05.667535Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:06,668 - INFO - [2025-11-22T19:07:06.668456Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:07,668 - INFO - [2025-11-22T19:07:07.668830Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:08,669 - INFO - [2025-11-22T19:07:08.669473Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:09,670 - INFO - [2025-11-22T19:07:09.669942Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:10,673 - INFO - [2025-11-22T19:07:10.673627Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:11,674 - INFO - [2025-11-22T19:07:11.674113Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:12,678 - INFO - [2025-11-22T19:07:12.677956Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:13,678 - INFO - [2025-11-22T19:07:13.678411Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:14,678 - INFO - [2025-11-22T19:07:14.678835Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:15,679 - INFO - [2025-11-22T19:07:15.679509Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:16,680 - INFO - [2025-11-22T19:07:16.680098Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:17,680 - INFO - [2025-11-22T19:07:17.680657Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:18,681 - INFO - [2025-11-22T19:07:18.681028Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:19,681 - INFO - [2025-11-22T19:07:19.681596Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:20,682 - INFO - [2025-11-22T19:07:20.682034Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:21,682 - INFO - [2025-11-22T19:07:21.682420Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:22,683 - INFO - [2025-11-22T19:07:22.682929Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:23,683 - INFO - [2025-11-22T19:07:23.683334Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:24,683 - INFO - [2025-11-22T19:07:24.683723Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:25,684 - INFO - [2025-11-22T19:07:25.684291Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:26,684 - INFO - [2025-11-22T19:07:26.684507Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:27,684 - INFO - [2025-11-22T19:07:27.684804Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:28,685 - INFO - [2025-11-22T19:07:28.684957Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:29,685 - INFO - [2025-11-22T19:07:29.685422Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:30,686 - INFO - [2025-11-22T19:07:30.686139Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:31,686 - INFO - [2025-11-22T19:07:31.686564Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:32,686 - INFO - [2025-11-22T19:07:32.686775Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:33,688 - INFO - [2025-11-22T19:07:33.688764Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:34,689 - INFO - [2025-11-22T19:07:34.689120Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:35,689 - INFO - [2025-11-22T19:07:35.689240Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:36,689 - INFO - [2025-11-22T19:07:36.689848Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:37,690 - INFO - [2025-11-22T19:07:37.690161Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:38,690 - INFO - [2025-11-22T19:07:38.690552Z] PPS=76.8 monlist_pks/s=0.0 uniq_srcs=1
+2025-11-23 02:07:39,691 - WARNING - [2025-11-22T19:07:39.691065Z] PPS=382.4 monlist_pks/s=0.0 uniq_srcs=1  ALERT: PPS 382.4 > threshold 200
+2025-11-23 02:07:40,691 - WARNING - [2025-11-22T19:07:40.691890Z] PPS=690.0 monlist_pks/s=0.0 uniq_srcs=1  ALERT: PPS 690.0 > threshold 200
+2025-11-23 02:07:41,693 - WARNING - [2025-11-22T19:07:41.692991Z] PPS=1002.8 monlist_pks/s=0.0 uniq_srcs=1  ALERT: PPS 1002.8 > threshold 200
+2025-11-23 02:07:42,693 - WARNING - [2025-11-22T19:07:42.693358Z] PPS=1322.6 monlist_pks/s=0.0 uniq_srcs=1  ALERT: PPS 1322.6 > threshold 200
+2025-11-23 02:07:43,694 - WARNING - [2025-11-22T19:07:43.694122Z] PPS=1575.0 monlist_pks/s=0.0 uniq_srcs=1  ALERT: PPS 1575.0 > threshold 200
+2025-11-23 02:07:44,694 - WARNING - [2025-11-22T19:07:44.694482Z] PPS=1596.8 monlist_pks/s=0.0 uniq_srcs=1  ALERT: PPS 1596.8 > threshold 200
+2025-11-23 02:07:45,695 - WARNING - [2025-11-22T19:07:45.695407Z] PPS=1588.4 monlist_pks/s=0.0 uniq_srcs=1  ALERT: PPS 1588.4 > threshold 200
+2025-11-23 02:07:46,699 - WARNING - [2025-11-22T19:07:46.699216Z] PPS=1589.6 monlist_pks/s=0.0 uniq_srcs=1  ALERT: PPS 1589.6 > threshold 200
+2025-11-23 02:07:47,702 - WARNING - [2025-11-22T19:07:47.702215Z] PPS=1640.0 monlist_pks/s=0.0 uniq_srcs=1  ALERT: PPS 1640.0 > threshold 200
+2025-11-23 02:07:48,701 - WARNING - [2025-11-22T19:07:48.701364Z] PPS=1637.2 monlist_pks/s=0.0 uniq_srcs=1  ALERT: PPS 1637.2 > threshold 200
+2025-11-23 02:07:49,701 - WARNING - [2025-11-22T19:07:49.701618Z] PPS=1310.4 monlist_pks/s=0.0 uniq_srcs=1  ALERT: PPS 1310.4 > threshold 200
+2025-11-23 02:07:50,703 - WARNING - [2025-11-22T19:07:50.702984Z] PPS=1012.4 monlist_pks/s=0.0 uniq_srcs=1  ALERT: PPS 1012.4 > threshold 200
+2025-11-23 02:07:51,702 - WARNING - [2025-11-22T19:07:51.702368Z] PPS=699.0 monlist_pks/s=0.0 uniq_srcs=1  ALERT: PPS 699.0 > threshold 200
+2025-11-23 02:07:52,702 - WARNING - [2025-11-22T19:07:52.702799Z] PPS=327.6 monlist_pks/s=0.0 uniq_srcs=1  ALERT: PPS 327.6 > threshold 200
+2025-11-23 02:07:53,702 - INFO - [2025-11-22T19:07:53.702855Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:54,704 - INFO - [2025-11-22T19:07:54.704070Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:55,704 - INFO - [2025-11-22T19:07:55.704487Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:56,704 - INFO - [2025-11-22T19:07:56.704844Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:57,705 - INFO - [2025-11-22T19:07:57.705480Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:58,706 - INFO - [2025-11-22T19:07:58.705969Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:07:59,706 - INFO - [2025-11-22T19:07:59.706440Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:00,707 - INFO - [2025-11-22T19:08:00.706952Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:01,707 - INFO - [2025-11-22T19:08:01.707616Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:02,708 - INFO - [2025-11-22T19:08:02.708500Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:03,709 - INFO - [2025-11-22T19:08:03.709188Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:04,709 - INFO - [2025-11-22T19:08:04.709363Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:05,709 - INFO - [2025-11-22T19:08:05.709729Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:06,710 - INFO - [2025-11-22T19:08:06.710353Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:07,710 - INFO - [2025-11-22T19:08:07.710692Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:08,711 - INFO - [2025-11-22T19:08:08.711074Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:09,711 - INFO - [2025-11-22T19:08:09.711617Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:10,713 - INFO - [2025-11-22T19:08:10.712804Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:11,713 - INFO - [2025-11-22T19:08:11.713132Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:12,713 - INFO - [2025-11-22T19:08:12.713361Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:13,714 - INFO - [2025-11-22T19:08:13.713963Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:14,714 - INFO - [2025-11-22T19:08:14.714125Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:15,714 - INFO - [2025-11-22T19:08:15.714466Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:16,715 - INFO - [2025-11-22T19:08:16.715088Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:17,715 - INFO - [2025-11-22T19:08:17.715761Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:18,716 - INFO - [2025-11-22T19:08:18.716355Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:19,716 - INFO - [2025-11-22T19:08:19.716541Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:20,716 - INFO - [2025-11-22T19:08:20.716934Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:21,717 - INFO - [2025-11-22T19:08:21.717912Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:22,718 - INFO - [2025-11-22T19:08:22.718155Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:23,718 - INFO - [2025-11-22T19:08:23.718588Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:24,718 - INFO - [2025-11-22T19:08:24.718774Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:25,719 - INFO - [2025-11-22T19:08:25.719277Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:26,719 - INFO - [2025-11-22T19:08:26.719442Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:27,719 - INFO - [2025-11-22T19:08:27.719897Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:28,720 - INFO - [2025-11-22T19:08:28.720551Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:29,721 - INFO - [2025-11-22T19:08:29.721030Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:30,721 - INFO - [2025-11-22T19:08:30.721466Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:31,721 - INFO - [2025-11-22T19:08:31.721578Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:32,722 - INFO - [2025-11-22T19:08:32.722105Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:33,722 - INFO - [2025-11-22T19:08:33.722456Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:34,723 - INFO - [2025-11-22T19:08:34.722940Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:35,723 - INFO - [2025-11-22T19:08:35.723668Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:36,724 - INFO - [2025-11-22T19:08:36.724198Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:37,724 - INFO - [2025-11-22T19:08:37.724528Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:38,725 - INFO - [2025-11-22T19:08:38.725127Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:39,725 - INFO - [2025-11-22T19:08:39.725804Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:40,726 - INFO - [2025-11-22T19:08:40.725977Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:41,726 - INFO - [2025-11-22T19:08:41.726306Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:42,726 - INFO - [2025-11-22T19:08:42.726877Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:43,727 - INFO - [2025-11-22T19:08:43.727615Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:44,727 - INFO - [2025-11-22T19:08:44.727867Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:45,729 - INFO - [2025-11-22T19:08:45.729145Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:46,729 - INFO - [2025-11-22T19:08:46.729416Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:47,730 - INFO - [2025-11-22T19:08:47.729875Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:48,730 - INFO - [2025-11-22T19:08:48.730202Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:49,730 - INFO - [2025-11-22T19:08:49.730789Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:50,731 - INFO - [2025-11-22T19:08:50.731762Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:51,732 - INFO - [2025-11-22T19:08:51.732304Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:52,732 - INFO - [2025-11-22T19:08:52.732746Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:53,733 - INFO - [2025-11-22T19:08:53.733510Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:54,733 - INFO - [2025-11-22T19:08:54.733699Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:08:55,452 - INFO - Signal 2 received — stopping
+2025-11-23 02:08:55,734 - INFO - Stats worker exiting
+2025-11-23 02:08:57,546 - INFO - Full JSON history written to ntp_stats.ndjson.full.json
+2025-11-23 02:08:57,547 - INFO - Full CSV history written to ntp_stats.csv.full.csv
+2025-11-23 02:35:10,269 - INFO - Starting NTPDetector
+2025-11-23 02:35:10,269 - INFO - Listening on interface: \Device\NPF_Loopback
+2025-11-23 02:35:10,270 - INFO - Stats worker started
+2025-11-23 02:35:10,271 - INFO - [2025-11-22T19:35:10.271100Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:35:11,271 - INFO - [2025-11-22T19:35:11.270988Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:35:12,271 - INFO - [2025-11-22T19:35:12.271172Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:35:13,271 - INFO - [2025-11-22T19:35:13.271602Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:35:14,272 - INFO - [2025-11-22T19:35:14.271942Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:35:15,272 - INFO - [2025-11-22T19:35:15.272279Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:35:16,272 - INFO - [2025-11-22T19:35:16.272300Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:35:17,273 - INFO - [2025-11-22T19:35:17.273188Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:35:18,273 - INFO - [2025-11-22T19:35:18.273645Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:35:19,273 - INFO - [2025-11-22T19:35:19.273731Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:35:20,274 - INFO - [2025-11-22T19:35:20.274214Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:35:21,274 - INFO - [2025-11-22T19:35:21.274663Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:35:22,275 - INFO - [2025-11-22T19:35:22.275025Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:35:23,275 - INFO - [2025-11-22T19:35:23.275554Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:35:24,276 - INFO - [2025-11-22T19:35:24.276348Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:35:25,276 - INFO - [2025-11-22T19:35:25.276555Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:35:26,276 - INFO - [2025-11-22T19:35:26.276849Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:35:27,277 - INFO - [2025-11-22T19:35:27.277331Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:35:28,277 - INFO - [2025-11-22T19:35:28.277844Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:35:29,278 - INFO - [2025-11-22T19:35:29.278153Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:35:30,279 - INFO - [2025-11-22T19:35:30.279385Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:35:31,280 - INFO - [2025-11-22T19:35:31.279926Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:35:32,280 - INFO - [2025-11-22T19:35:32.280868Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:35:33,281 - INFO - [2025-11-22T19:35:33.281371Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:35:34,282 - INFO - [2025-11-22T19:35:34.282253Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:35:35,282 - INFO - [2025-11-22T19:35:35.282335Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:35:36,284 - INFO - [2025-11-22T19:35:36.284542Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:35:37,284 - INFO - [2025-11-22T19:35:37.284796Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:35:38,285 - INFO - [2025-11-22T19:35:38.285514Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:35:39,286 - INFO - [2025-11-22T19:35:39.286029Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:35:40,286 - INFO - [2025-11-22T19:35:40.286314Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:35:41,288 - INFO - [2025-11-22T19:35:41.287950Z] PPS=1.0 monlist_pks/s=0.0 uniq_srcs=1
+2025-11-23 02:35:42,288 - INFO - [2025-11-22T19:35:42.288152Z] PPS=1.0 monlist_pks/s=0.0 uniq_srcs=1
+2025-11-23 02:35:43,289 - INFO - [2025-11-22T19:35:43.288881Z] PPS=1.0 monlist_pks/s=0.0 uniq_srcs=1
+2025-11-23 02:35:44,288 - INFO - [2025-11-22T19:35:44.288804Z] PPS=1.0 monlist_pks/s=0.0 uniq_srcs=1
+2025-11-23 02:35:45,289 - INFO - [2025-11-22T19:35:45.289113Z] PPS=1.0 monlist_pks/s=0.0 uniq_srcs=1
+2025-11-23 02:35:46,289 - INFO - [2025-11-22T19:35:46.289829Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:35:47,290 - INFO - [2025-11-22T19:35:47.290205Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 02:35:48,248 - INFO - Signal 2 received — stopping
+2025-11-23 02:35:48,290 - INFO - Stats worker exiting
+2025-11-23 02:35:50,391 - INFO - Full JSON history written to ntp_stats.ndjson.full.json
+2025-11-23 02:35:50,393 - INFO - Full CSV history written to ntp_stats.csv.full.csv
+2025-11-23 03:02:38,277 - INFO - Starting NTPDetector
+2025-11-23 03:02:38,277 - INFO - Listening on interface: \Device\NPF_Loopback
+2025-11-23 03:02:38,277 - INFO - Stats worker started
+2025-11-23 03:02:38,278 - INFO - [2025-11-22T20:02:38.278775Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:02:39,279 - INFO - [2025-11-22T20:02:39.279290Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:02:40,280 - INFO - [2025-11-22T20:02:40.280627Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:02:41,280 - INFO - [2025-11-22T20:02:41.280735Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:02:42,281 - INFO - [2025-11-22T20:02:42.281283Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:02:43,281 - INFO - [2025-11-22T20:02:43.281853Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:02:44,283 - INFO - [2025-11-22T20:02:44.282957Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:02:45,283 - INFO - [2025-11-22T20:02:45.283402Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:02:46,283 - INFO - [2025-11-22T20:02:46.283623Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:02:47,284 - INFO - [2025-11-22T20:02:47.283976Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:02:48,284 - INFO - [2025-11-22T20:02:48.284255Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:02:49,284 - INFO - [2025-11-22T20:02:49.284609Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:02:50,285 - INFO - [2025-11-22T20:02:50.285218Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:02:51,285 - INFO - [2025-11-22T20:02:51.285450Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:02:52,285 - INFO - [2025-11-22T20:02:52.285873Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:02:53,286 - INFO - [2025-11-22T20:02:53.286163Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:02:54,287 - INFO - [2025-11-22T20:02:54.286977Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:02:55,287 - INFO - [2025-11-22T20:02:55.287630Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:02:56,288 - INFO - [2025-11-22T20:02:56.288087Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:02:57,288 - INFO - [2025-11-22T20:02:57.288555Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:02:58,289 - INFO - [2025-11-22T20:02:58.288945Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:02:59,289 - INFO - [2025-11-22T20:02:59.289505Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:03:00,290 - INFO - [2025-11-22T20:03:00.290244Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:03:01,290 - INFO - [2025-11-22T20:03:01.290818Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:03:02,291 - INFO - [2025-11-22T20:03:02.291102Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:03:03,291 - INFO - [2025-11-22T20:03:03.291597Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:03:04,292 - INFO - [2025-11-22T20:03:04.292276Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:03:05,292 - INFO - [2025-11-22T20:03:05.292500Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:03:06,293 - INFO - [2025-11-22T20:03:06.293107Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:03:07,293 - INFO - [2025-11-22T20:03:07.293738Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:03:08,294 - INFO - [2025-11-22T20:03:08.294580Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:03:09,295 - INFO - [2025-11-22T20:03:09.295644Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:03:10,296 - INFO - [2025-11-22T20:03:10.296392Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:03:11,297 - INFO - [2025-11-22T20:03:11.297189Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:03:12,298 - INFO - [2025-11-22T20:03:12.298502Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:03:13,298 - INFO - [2025-11-22T20:03:13.298863Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:03:14,299 - INFO - [2025-11-22T20:03:14.299490Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:03:15,299 - INFO - [2025-11-22T20:03:15.299862Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:03:16,300 - INFO - [2025-11-22T20:03:16.300279Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:03:17,301 - INFO - [2025-11-22T20:03:17.301159Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:03:18,301 - INFO - [2025-11-22T20:03:18.301792Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:03:19,302 - INFO - [2025-11-22T20:03:19.302396Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:03:20,302 - INFO - [2025-11-22T20:03:20.302732Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:03:21,303 - INFO - [2025-11-22T20:03:21.303290Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:03:22,304 - INFO - [2025-11-22T20:03:22.303954Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:03:23,304 - INFO - [2025-11-22T20:03:23.304568Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:03:24,304 - INFO - [2025-11-22T20:03:24.304890Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:03:25,305 - INFO - [2025-11-22T20:03:25.305011Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:03:26,305 - INFO - [2025-11-22T20:03:26.305512Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:03:27,305 - INFO - [2025-11-22T20:03:27.305714Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:03:28,305 - INFO - [2025-11-22T20:03:28.305883Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:03:29,306 - INFO - [2025-11-22T20:03:29.306009Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:03:30,306 - INFO - [2025-11-22T20:03:30.306232Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:03:31,306 - INFO - [2025-11-22T20:03:31.306568Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:03:32,307 - INFO - [2025-11-22T20:03:32.306898Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:03:32,584 - INFO - Signal 2 received — stopping
+2025-11-23 03:03:33,307 - INFO - Stats worker exiting
+2025-11-23 03:07:41,630 - INFO - Starting NTPDetector
+2025-11-23 03:07:41,630 - INFO - Listening on interface: \Device\NPF_Loopback
+2025-11-23 03:07:41,631 - INFO - Stats worker started
+2025-11-23 03:07:41,632 - INFO - [2025-11-22T20:07:41.632517Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:07:42,632 - INFO - [2025-11-22T20:07:42.632133Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:07:43,632 - INFO - [2025-11-22T20:07:43.632726Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:07:44,633 - INFO - [2025-11-22T20:07:44.633208Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:07:45,633 - INFO - [2025-11-22T20:07:45.633672Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:07:46,634 - INFO - [2025-11-22T20:07:46.634220Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:07:47,634 - INFO - [2025-11-22T20:07:47.634831Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:07:48,635 - INFO - [2025-11-22T20:07:48.635558Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:07:49,636 - INFO - [2025-11-22T20:07:49.635997Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:07:50,636 - INFO - [2025-11-22T20:07:50.636399Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:07:51,636 - INFO - [2025-11-22T20:07:51.636654Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:07:52,637 - INFO - [2025-11-22T20:07:52.637017Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:07:53,637 - INFO - [2025-11-22T20:07:53.637114Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:07:54,637 - INFO - [2025-11-22T20:07:54.637545Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:07:55,638 - INFO - [2025-11-22T20:07:55.638217Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:07:56,638 - INFO - [2025-11-22T20:07:56.638729Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:07:57,639 - INFO - [2025-11-22T20:07:57.639230Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:07:58,639 - INFO - [2025-11-22T20:07:58.639774Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:07:59,640 - INFO - [2025-11-22T20:07:59.640687Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:00,641 - INFO - [2025-11-22T20:08:00.641117Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:01,641 - INFO - [2025-11-22T20:08:01.641822Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:02,642 - INFO - [2025-11-22T20:08:02.642232Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:03,643 - INFO - [2025-11-22T20:08:03.643090Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:04,643 - INFO - [2025-11-22T20:08:04.643597Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:05,644 - INFO - [2025-11-22T20:08:05.644154Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:06,644 - INFO - [2025-11-22T20:08:06.644516Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:07,645 - INFO - [2025-11-22T20:08:07.645024Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:08,645 - INFO - [2025-11-22T20:08:08.645287Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:09,645 - INFO - [2025-11-22T20:08:09.645641Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:10,647 - INFO - [2025-11-22T20:08:10.647529Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:11,648 - INFO - [2025-11-22T20:08:11.648066Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:12,648 - INFO - [2025-11-22T20:08:12.648467Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:13,649 - INFO - [2025-11-22T20:08:13.649239Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:14,649 - INFO - [2025-11-22T20:08:14.649584Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:15,650 - INFO - [2025-11-22T20:08:15.650059Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:16,650 - INFO - [2025-11-22T20:08:16.650299Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:17,650 - INFO - [2025-11-22T20:08:17.650554Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:18,652 - INFO - [2025-11-22T20:08:18.652365Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:19,652 - INFO - [2025-11-22T20:08:19.652466Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:20,652 - INFO - [2025-11-22T20:08:20.652696Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:21,653 - INFO - [2025-11-22T20:08:21.653549Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:22,654 - INFO - [2025-11-22T20:08:22.654261Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:23,654 - INFO - [2025-11-22T20:08:23.654603Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:24,655 - INFO - [2025-11-22T20:08:24.655084Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:25,655 - INFO - [2025-11-22T20:08:25.655307Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:26,656 - INFO - [2025-11-22T20:08:26.655920Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:27,656 - INFO - [2025-11-22T20:08:27.656281Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:28,657 - INFO - [2025-11-22T20:08:28.657134Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:29,657 - INFO - [2025-11-22T20:08:29.657657Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:30,658 - INFO - [2025-11-22T20:08:30.658360Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:31,658 - INFO - [2025-11-22T20:08:31.658740Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:32,663 - INFO - [2025-11-22T20:08:32.663041Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:33,663 - INFO - [2025-11-22T20:08:33.663539Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:34,665 - INFO - [2025-11-22T20:08:34.665016Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:35,665 - INFO - [2025-11-22T20:08:35.665447Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:36,665 - INFO - [2025-11-22T20:08:36.665893Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:37,666 - INFO - [2025-11-22T20:08:37.666522Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:38,667 - INFO - [2025-11-22T20:08:38.666963Z] PPS=36.6 monlist_pks/s=0.0 uniq_srcs=1
+2025-11-23 03:08:39,667 - INFO - [2025-11-22T20:08:39.667700Z] PPS=188.4 monlist_pks/s=0.0 uniq_srcs=1
+2025-11-23 03:08:40,670 - WARNING - [2025-11-22T20:08:40.670519Z] PPS=347.2 monlist_pks/s=0.0 uniq_srcs=1  ALERT: PPS 347.2 > threshold 200
+2025-11-23 03:08:41,672 - WARNING - [2025-11-22T20:08:41.671986Z] PPS=740.4 monlist_pks/s=0.0 uniq_srcs=1  ALERT: PPS 740.4 > threshold 200
+2025-11-23 03:08:42,672 - WARNING - [2025-11-22T20:08:42.672102Z] PPS=944.0 monlist_pks/s=0.0 uniq_srcs=1  ALERT: PPS 944.0 > threshold 200
+2025-11-23 03:08:43,673 - WARNING - [2025-11-22T20:08:43.673516Z] PPS=906.0 monlist_pks/s=0.0 uniq_srcs=1  ALERT: PPS 906.0 > threshold 200
+2025-11-23 03:08:44,673 - WARNING - [2025-11-22T20:08:44.673571Z] PPS=755.2 monlist_pks/s=0.0 uniq_srcs=1  ALERT: PPS 755.2 > threshold 200
+2025-11-23 03:08:45,673 - WARNING - [2025-11-22T20:08:45.673313Z] PPS=596.4 monlist_pks/s=0.0 uniq_srcs=1  ALERT: PPS 596.4 > threshold 200
+2025-11-23 03:08:46,673 - WARNING - [2025-11-22T20:08:46.673723Z] PPS=203.4 monlist_pks/s=0.0 uniq_srcs=1  ALERT: PPS 203.4 > threshold 200
+2025-11-23 03:08:47,673 - INFO - [2025-11-22T20:08:47.673621Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:48,673 - INFO - [2025-11-22T20:08:48.673845Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:49,674 - INFO - [2025-11-22T20:08:49.674267Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:50,675 - INFO - [2025-11-22T20:08:50.674917Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:51,675 - INFO - [2025-11-22T20:08:51.675453Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:52,676 - INFO - [2025-11-22T20:08:52.675971Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:53,677 - INFO - [2025-11-22T20:08:53.677173Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:54,677 - INFO - [2025-11-22T20:08:54.677465Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:55,677 - INFO - [2025-11-22T20:08:55.677726Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:56,678 - INFO - [2025-11-22T20:08:56.677980Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:57,679 - INFO - [2025-11-22T20:08:57.679100Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:58,679 - INFO - [2025-11-22T20:08:58.679586Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:08:59,680 - INFO - [2025-11-22T20:08:59.680000Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:00,680 - INFO - [2025-11-22T20:09:00.680479Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:01,682 - INFO - [2025-11-22T20:09:01.681921Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:02,682 - INFO - [2025-11-22T20:09:02.682186Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:03,682 - INFO - [2025-11-22T20:09:03.682400Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:04,683 - INFO - [2025-11-22T20:09:04.683224Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:05,683 - INFO - [2025-11-22T20:09:05.683609Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:06,684 - INFO - [2025-11-22T20:09:06.684011Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:07,686 - INFO - [2025-11-22T20:09:07.686555Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:08,687 - INFO - [2025-11-22T20:09:08.687291Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:09,687 - INFO - [2025-11-22T20:09:09.687664Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:10,688 - INFO - [2025-11-22T20:09:10.688311Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:11,688 - INFO - [2025-11-22T20:09:11.688458Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:12,689 - INFO - [2025-11-22T20:09:12.689142Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:13,690 - INFO - [2025-11-22T20:09:13.690499Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:14,698 - INFO - [2025-11-22T20:09:14.695668Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:15,697 - INFO - [2025-11-22T20:09:15.697246Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:16,702 - INFO - [2025-11-22T20:09:16.702717Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:17,710 - INFO - [2025-11-22T20:09:17.710160Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:18,712 - INFO - [2025-11-22T20:09:18.712190Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:19,713 - INFO - [2025-11-22T20:09:19.713892Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:20,721 - INFO - [2025-11-22T20:09:20.720957Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:21,729 - INFO - [2025-11-22T20:09:21.729047Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:22,730 - INFO - [2025-11-22T20:09:22.730262Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:23,731 - INFO - [2025-11-22T20:09:23.731043Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:24,732 - INFO - [2025-11-22T20:09:24.732414Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:25,732 - INFO - [2025-11-22T20:09:25.732874Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:26,742 - INFO - [2025-11-22T20:09:26.742614Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:27,743 - INFO - [2025-11-22T20:09:27.743196Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:28,743 - INFO - [2025-11-22T20:09:28.743856Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:29,745 - INFO - [2025-11-22T20:09:29.745157Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:30,750 - INFO - [2025-11-22T20:09:30.750771Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:31,751 - INFO - [2025-11-22T20:09:31.751389Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:32,752 - INFO - [2025-11-22T20:09:32.752178Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:33,753 - INFO - [2025-11-22T20:09:33.752893Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:34,753 - INFO - [2025-11-22T20:09:34.753391Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:35,754 - INFO - [2025-11-22T20:09:35.754293Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:36,755 - INFO - [2025-11-22T20:09:36.755727Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:37,756 - INFO - [2025-11-22T20:09:37.756324Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:38,757 - INFO - [2025-11-22T20:09:38.756962Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:39,757 - INFO - [2025-11-22T20:09:39.757809Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:40,758 - INFO - [2025-11-22T20:09:40.758286Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:41,758 - INFO - [2025-11-22T20:09:41.758504Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:42,758 - INFO - [2025-11-22T20:09:42.758829Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:43,759 - INFO - [2025-11-22T20:09:43.759114Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:44,759 - INFO - [2025-11-22T20:09:44.759363Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:45,759 - INFO - [2025-11-22T20:09:45.759819Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:46,760 - INFO - [2025-11-22T20:09:46.760375Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:47,761 - INFO - [2025-11-22T20:09:47.761009Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:48,761 - INFO - [2025-11-22T20:09:48.761147Z] PPS=0.4 monlist_pks/s=0.0 uniq_srcs=1
+2025-11-23 03:09:49,761 - INFO - [2025-11-22T20:09:49.761271Z] PPS=0.4 monlist_pks/s=0.0 uniq_srcs=1
+2025-11-23 03:09:50,761 - INFO - [2025-11-22T20:09:50.761544Z] PPS=0.4 monlist_pks/s=0.0 uniq_srcs=1
+2025-11-23 03:09:51,761 - INFO - [2025-11-22T20:09:51.761796Z] PPS=0.4 monlist_pks/s=0.0 uniq_srcs=1
+2025-11-23 03:09:52,762 - INFO - [2025-11-22T20:09:52.762123Z] PPS=0.4 monlist_pks/s=0.0 uniq_srcs=1
+2025-11-23 03:09:53,762 - INFO - [2025-11-22T20:09:53.762557Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:54,762 - INFO - [2025-11-22T20:09:54.762727Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:55,763 - INFO - [2025-11-22T20:09:55.763286Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:56,764 - INFO - [2025-11-22T20:09:56.763990Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:57,764 - INFO - [2025-11-22T20:09:57.764534Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:09:58,655 - INFO - Signal 2 received — stopping
+2025-11-23 03:09:58,765 - INFO - Stats worker exiting
+2025-11-23 03:12:46,002 - INFO - Starting NTPDetector
+2025-11-23 03:12:46,003 - INFO - Listening on interface: \Device\NPF_Loopback
+2025-11-23 03:12:46,006 - INFO - Stats worker started
+2025-11-23 03:12:46,010 - INFO - [2025-11-22T20:12:46.010882Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:12:47,009 - INFO - [2025-11-22T20:12:47.009093Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:12:48,009 - INFO - [2025-11-22T20:12:48.009179Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:12:49,009 - INFO - [2025-11-22T20:12:49.009607Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:12:50,010 - INFO - [2025-11-22T20:12:50.010732Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:12:51,011 - INFO - [2025-11-22T20:12:51.011793Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:12:52,012 - INFO - [2025-11-22T20:12:52.012435Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:12:53,012 - INFO - [2025-11-22T20:12:53.012622Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:12:54,013 - INFO - [2025-11-22T20:12:54.013736Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:12:55,014 - INFO - [2025-11-22T20:12:55.014040Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:12:56,014 - INFO - [2025-11-22T20:12:56.014368Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:12:57,016 - INFO - [2025-11-22T20:12:57.015949Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:12:58,016 - INFO - [2025-11-22T20:12:58.016462Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:12:59,018 - INFO - [2025-11-22T20:12:59.017955Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:13:00,018 - INFO - [2025-11-22T20:13:00.018138Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:13:01,018 - INFO - [2025-11-22T20:13:01.018708Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:13:02,019 - INFO - [2025-11-22T20:13:02.019019Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:13:03,019 - INFO - [2025-11-22T20:13:03.019714Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:13:04,021 - INFO - [2025-11-22T20:13:04.021132Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:13:05,021 - INFO - [2025-11-22T20:13:05.021780Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:13:06,022 - INFO - [2025-11-22T20:13:06.022750Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:13:07,023 - INFO - [2025-11-22T20:13:07.023512Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:13:08,024 - INFO - [2025-11-22T20:13:08.024102Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:13:09,024 - INFO - [2025-11-22T20:13:09.024186Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:13:10,024 - INFO - [2025-11-22T20:13:10.024658Z] PPS=6.0 monlist_pks/s=0.0 uniq_srcs=1
+2025-11-23 03:13:11,025 - INFO - [2025-11-22T20:13:11.025126Z] PPS=20.0 monlist_pks/s=0.0 uniq_srcs=1
+2025-11-23 03:13:12,025 - INFO - [2025-11-22T20:13:12.025472Z] PPS=20.0 monlist_pks/s=0.0 uniq_srcs=1
+2025-11-23 03:13:13,025 - INFO - [2025-11-22T20:13:13.025811Z] PPS=20.0 monlist_pks/s=0.0 uniq_srcs=1
+2025-11-23 03:13:14,026 - INFO - [2025-11-22T20:13:14.026139Z] PPS=20.0 monlist_pks/s=0.0 uniq_srcs=1
+2025-11-23 03:13:15,026 - INFO - [2025-11-22T20:13:15.026418Z] PPS=14.0 monlist_pks/s=0.0 uniq_srcs=1
+2025-11-23 03:13:16,027 - INFO - [2025-11-22T20:13:16.027082Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:13:17,027 - INFO - [2025-11-22T20:13:17.027254Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:13:18,027 - INFO - [2025-11-22T20:13:18.027678Z] PPS=0.0 monlist_pks/s=0.0 uniq_srcs=0
+2025-11-23 03:13:18,733 - INFO - Signal 2 received — stopping
+2025-11-23 03:13:19,028 - INFO - Stats worker exiting
